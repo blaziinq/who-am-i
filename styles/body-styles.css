@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+::selection { /*When text is selected*/
+  color: red;
+  background: rgb(205, 205, 205);
+}
+
+/* The stuff in the header: */
+#header {
+  background-color: dimgrey;
+  overflow: hidden;
+}
+.headerLink {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.headerLink:hover {
+  background-color: rgb(223, 223, 223);
+  color: black;
+}
+.headerLinkLeft {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: "Fredoka One", cursive;
+  font-size: 40px;
+}
+.headerLinkLeft:hover {
+  background-color: rgb(223, 223, 223);
+  color: black;
+}
+
+/* The stuff in the footer: */
+#footer {
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 550px){ /*edit this*/
+  .headerLink {
+    float: none !important;
+    width: 100%;
+    padding: 15px 0px;
+  }
+}
