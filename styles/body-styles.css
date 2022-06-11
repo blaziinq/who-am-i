@@ -6,13 +6,17 @@ body {
 }
 
 ::selection { /*When text is selected*/
-  color: red;
-  background: rgb(205, 205, 205);
+  color: white;
+  background: black;
+  border-radius: 50%;
 }
 
 /* The stuff in the header: */
-#header {
-  background-color: dimgrey;
+header {
+  background-color: rgb(214, 250, 255);
+}
+#navbar {
+  background-color: dimgray;
   overflow: hidden;
 }
 .headerLink {
@@ -30,19 +34,16 @@ body {
   background-color: rgb(223, 223, 223);
   color: black;
 }
-.headerLinkLeft {
-  float: left;
-  display: block;
-  color: white;
+#first-title {
+  font-size: 50px;
   text-align: center;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-family: "Fredoka One", cursive;
-  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  transition-duration: 150ms;
 }
-.headerLinkLeft:hover {
-  background-color: rgb(223, 223, 223);
-  color: black;
+#first-title:hover {
+  transform: scale(1.25);
+  cursor: default;
 }
 
 /* The stuff in the footer: */
@@ -55,10 +56,21 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 550px){ /*edit this*/
+@media screen and (max-width: 560px){ /*edit this*/
   .headerLink {
     float: none !important;
     width: 100%;
     padding: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 388px){
+  #first-title:hover {
+    transform: scale(1.05);
+  }
+}
+@media screen and (max-width: 388px){ /*The smallest phone width is 320px*/
+  #first-title:hover {
+    transform: scale(1.03);
   }
 }

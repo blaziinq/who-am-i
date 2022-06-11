@@ -1,17 +1,27 @@
 function header_large() {
   var header_section_text = `
-  <a href="index.html" class="headerLink" style="float: left">Home</a>
-  <a href="about.html" class="headerLink">About</a>
-  <a href="learn.html" class="headerLink">Projects</a>
+  <div style="overflow: hidden">
+    <h1 id="first-title">Welcome to my portfolio!</h1>
+  </div>
+  <div id="navbar">
+    <a href="index.html" class="headerLink" style="float: left">Home</a>
+    <a href="about.html" class="headerLink">About</a>
+    <a href="projects.html" class="headerLink">Projects</a>
+  </div>
   `;
 
   document.getElementById("header").innerHTML = header_section_text;
 }
 function header_small() {
   var header_section_text = `
-  <a href="index.html" class="headerLink" style="float: left">Home</a>
-  <a href="learn.html" class="headerLink">Projects</a>
-  <a href="about.html" class="headerLink">About</a>
+  <div style="overflow: hidden">
+    <h1 id="first-title">Welcome to my website!</h1>
+  </div>
+  <div id="navbar">
+    <a href="index.html" class="headerLink" style="float: left">Home</a>
+    <a href="projects.html" class="headerLink">Projects</a>
+    <a href="about.html" class="headerLink">About</a>
+  </div>
   `;
 
   document.getElementById("header").innerHTML = header_section_text;
@@ -38,6 +48,12 @@ function footer() {
       >My Twitter</a
     >
   </div>
+  <br />
+  <strong>The fonts that were used in this website are:</strong>
+  <ul>
+    <li><a href="https://fonts.google.com/specimen/Poppins" target="_blank" rel="noopener noreferrer" class="normal-link">Poppins</a></li>
+    <li><a href="https://fonts.google.com/specimen/Ubuntu" target="_blank" rel="noopener noreferrer" class="normal-link">Ubuntu</a></li>
+  </ul>
   `;
 
   document.getElementById("footer").innerHTML = footer_section_text;
@@ -45,7 +61,8 @@ function footer() {
 
 function resize_check() {
   width = window.innerWidth;
-  if (width <= 550) {
+  // the difference between the two of the below is simply the order in which the elemets come in.
+  if (width <= 560) {
     header_small();
   } else {
     header_large();
@@ -59,10 +76,3 @@ window.onload = function Start() {
   resize_check();
   footer();
 };
-
-//width = window.innerWidth;
-//if (width <= 550) {
-//  header_small();
-//} else {
-//  header_large();
-//}
