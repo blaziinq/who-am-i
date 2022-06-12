@@ -48,13 +48,13 @@ header {
 
 /* The stuff in the footer: */
 #footer {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(242, 242, 242);
   width: 100%;
   position: absolute;
-  color: white;
+  color: black;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 50vh 0 50vh rgb(27, 27, 27); /*Extends footer to the bottom of the page, even when it's not there*/
+  box-shadow: 0 50vh 0 50vh rgb(242, 242, 242); /*Extends footer to the bottom of the page, even when it's not there*/
 }
 
 @media screen and (max-width: 560px){
