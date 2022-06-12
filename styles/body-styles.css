@@ -54,6 +54,7 @@ header {
   color: white;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  box-shadow: 0 50vh 0 50vh rgb(27, 27, 27);
 }
 
 @media screen and (max-width: 560px){ /*edit this*/
