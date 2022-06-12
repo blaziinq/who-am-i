@@ -1,27 +1,34 @@
+welcome_text = "Welcome to my website!";
+
 function header_large() {
-  var header_section_text = `
-  <div style="overflow: hidden">
-    <h1 id="first-title">Welcome to my portfolio!</h1>
-  </div>
-  <div id="navbar">
-    <a href="index.html" class="headerLink" style="float: left">Home</a>
-    <a href="about.html" class="headerLink">About</a>
-    <a href="projects.html" class="headerLink">Projects</a>
-  </div>
-  `;
+  var header_section_text =
+    `
+    <div style="overflow: hidden">
+    <h1 id="first-title">` +
+    welcome_text +
+    `</h1>
+    </div>
+    <div id="navbar">
+      <a href="index.html" class="headerLink" style="float: left">Home</a>
+      <a href="about.html" class="headerLink">About</a>
+      <a href="projects.html" class="headerLink">Projects</a>
+    </div>`;
 
   document.getElementById("header").innerHTML = header_section_text;
 }
 function header_small() {
-  var header_section_text = `
-  <div style="overflow: hidden">
-    <h1 id="first-title">Welcome to my website!</h1>
-  </div>
-  <div id="navbar">
-    <a href="index.html" class="headerLink" style="float: left">Home</a>
-    <a href="projects.html" class="headerLink">Projects</a>
-    <a href="about.html" class="headerLink">About</a>
-  </div>
+  var header_section_text =
+    `
+    <div style="overflow: hidden">
+    <h1 id="first-title">` +
+    welcome_text +
+    `</h1>
+    </div>
+    <div id="navbar">
+      <a href="index.html" class="headerLink" style="float: left">Home</a>
+      <a href="projects.html" class="headerLink">Projects</a>
+      <a href="about.html" class="headerLink">About</a>
+    </div>
   `;
 
   document.getElementById("header").innerHTML = header_section_text;
