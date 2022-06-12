@@ -1,0 +1,28 @@
+#scrollbar {
+  display:flex; /*
+  align-items:center;
+  justify-content:center;*/
+  background-color: rgb(45, 45, 45);
+  color: white;
+  overflow-x: auto;
+
+}
+
+.project {
+  display: block;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 100ms;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 20px;
+}
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project img {
+  height: 200px;
+}

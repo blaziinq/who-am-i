@@ -1,4 +1,4 @@
-body {
+body { /*Basic settings for the fotter */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 ::selection { /*When text is selected*/
   color: white;
   background: black;
-  border-radius: 50%;
+  border-radius: 50%; /*I wish this worked.*/
 }
 
 /* The stuff in the header: */
@@ -54,10 +54,10 @@ header {
   color: white;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 50vh 0 50vh rgb(27, 27, 27);
+  box-shadow: 0 50vh 0 50vh rgb(27, 27, 27); /*Extends footer to the bottom of the page, even when it's not there*/
 }
 
-@media screen and (max-width: 560px){ /*edit this*/
+@media screen and (max-width: 560px){
   .headerLink {
     float: none !important;
     width: 100%;
@@ -65,12 +65,14 @@ header {
   }
 }
 
+/*Changes text above the navbar based off of the size of the screen*/
+
 @media screen and (max-width: 480px) and (min-width: 388px){
   #first-title:hover {
     transform: scale(1.05);
   }
 }
-@media screen and (max-width: 388px){ /*The smallest phone width is 320px*/
+@media screen and (max-width: 388px){ /*The smallest phone width is 320px (iphone 5); altho hover effects arent rly visible for this on phones.*/
   #first-title:hover {
     transform: scale(1.03);
   }
